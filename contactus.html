@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="דף צור קשר" />
+    <meta name="keywords" content="צור קשר תמרורון,למידה תמרורים" />
+    <meta name="author" content="אלכסנדר ליוביץ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="https://webdevelopmentcourse.github.io/contactUs/WebDevelopmentCourse/jScripts/contactUs.js" type="text/javascript"></script>
+    <link rel="icon" href="pic/icon_my.png">
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <h6>תמרורון</h6>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a class="currentPage" href="contactus.html">צור קשר</a></li>
+                        <li><a href="about.html">אודות</a></li>
+                        <li class="has_dropdown">
+                            <a href="*">לוח תמרורים<span class="caret"></span></a>
+                            <ul class="dropdown">
+                                <li><a href="Warning_alert.html">אזהרה והתראה</a></li>
+                                <li><a href="giving_orders.html">הוריה</a></li>
+                                <li><a class="notActive" href="restrictions.html">איסורים והגבלות</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">עמוד הבית</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        
+        <form id="contact">
+            <input type="hidden" id="myEmail" name="name" value="a_lub@hotmail.com">
+            <h3>דף צור קשר</h3>
+            <h4>מעוניינים ללמוד על תמרורים, צרו איתנו קשר</h4>
+            <label for="FirstName">
+                <input placeholder="שם" type="text" tabindex="1" required autofocus>
+            </label>
+            <label for="e-mail">
+                <input placeholder=" Email Address" type="email" tabindex="2" required>
+                </label>
+            <label for="phonenumber">
+                <input placeholder="מספר טלפון" type="tel" tabindex="3" required>
+                </label>
+
+            <label for="textfree">
+                <textarea placeholder="טקסט חופשי" tabindex="5" required></textarea>
+                </label>
+               
+            <input type="submit" id="Send" value="שלח">
+               
+                <div id="feedback"></div>
+</form>
+     
+
+
+
+    </div>
+</body>
+</html>
